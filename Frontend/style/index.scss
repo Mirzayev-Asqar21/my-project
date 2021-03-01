@@ -1,0 +1,362 @@
+/****************************** FONT STYLE ***************************/
+
+@font-face {
+  font-family: "AvenirNextCyr-Bold";
+  src: url("../fonts/AvenirNextCyr-Bold.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-BoldItalic";
+  src: url("../fonts/AvenirNextCyr-BoldItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Demi";
+  src: url("../fonts/AvenirNextCyr-Demi.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-DemiItalic";
+  src: url("../fonts/AvenirNextCyr-DemiItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Heavy";
+  src: url("../fonts/AvenirNextCyr-Heavy.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-HeavyItalic";
+  src: url("../fonts/AvenirNextCyr-HeavyItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Italic";
+  src: url("../fonts/AvenirNextCyr-Italic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Light";
+  src: url("../fonts/AvenirNextCyr-Light.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-LightItalic";
+  src: url("../fonts/AvenirNextCyr-LightItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Medium";
+  src: url("../fonts/AvenirNextCyr-Medium.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-MediumItalic";
+  src: url("../fonts/AvenirNextCyr-MediumItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Thin";
+  src: url("../fonts/AvenirNextCyr-Thin.otf") format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextCyr-ThinItalic";
+  src: url("../fonts/AvenirNextCyr-ThinItalic.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-UltraLight";
+  src: url("../fonts/AvenirNextCyr-UltraLight.otf") format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-UltraLightIt";
+  src: url("../fonts/AvenirNextCyr-UltraLightIt.otf") format('opentype');
+  font-display: swap;
+}
+
+
+
+
+
+
+
+.font-family-AvenirNextCyr-Bold {
+  font-family: "AvenirNextCyr-Bold", "AvenirNextCyr-Demi", sans-serif !important;
+}
+
+.font-family-AvenirNextCyr-BoldItalic {
+  font-family: "AvenirNextCyr-BoldItalic", "AvenirNextCyr-DemiItalic", sans-serif !important;
+}
+
+.font-family-AvenirNextCyr-Demi {
+  font-family: "AvenirNextCyr-Demi", sans-serif !important;
+}
+
+
+/********************************** COLOR STYLE *****************************/
+
+
+$mainFirstColor: black;
+$mainSecondColor: white;
+$mainThirdColor: green;
+$mainFourthColor: red;
+
+
+/********************* ICON STYLE ********************************/
+
+
+.icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  background-color: $mainFourthColor;
+  vertical-align: middle;
+
+  &.icon-Vector {
+    mask-image: url("../img/Vector.svg");
+    -webkit-mask-image: url("../img/Vector.svg");
+  }
+  &.icon-Vector2 {
+    mask-image: url("../img/Vector 2.svg");
+    -webkit-mask-image: url("../img/Vector 2.svg");
+  }
+  &.icon-Vector3 {
+    mask-image: url("../img/Vector 3.svg");
+    -webkit-mask-image: url("../img/Vector 3.svg");
+  }
+}
+
+@media screen and (min-width: 225px) {
+  body {
+   .footer {
+     .container{
+       .row {
+         .col-6 {
+            width: 100% !important;
+         }
+         .col-3 {
+            width: 100% !important;
+         }
+       }
+     }
+   }
+  }
+}
+
+body {
+  background-color: #E5E5E5 !important;
+
+  header {
+   .navbar {
+     background-color: #1C1C1C !important;
+     color: white !important;
+        .container {
+          .navbar-brand {
+            width: 160px;
+            .img1 {
+              padding: 0 !important;
+              margin: 0!important;
+              transform: translateY(-7px);
+            }
+            .img2 {
+
+              transform: translate(-140px, 13px);
+            }
+          }
+          .my-buttton{
+
+          }
+          .navbar-collapse {
+            .navbar-nav {
+              overflow: hidden;
+                .active {
+                  border-bottom: 2px solid red;
+                }
+              .nav-item {
+                display: inline-block;
+                margin-right: 30px;
+                border-bottom: 2px solid transparent;
+                transition: linear 0.4s;
+
+                &:hover {
+                  border-bottom: 2px solid red;
+                }
+                .nav-link {
+                  color: white;
+                  padding: 10px 0 10px 0;
+
+                }
+              }
+            }
+            .dropdown {
+
+              .btn{
+                -webkit-box-shadow: none!important;
+                margin-left: -10px;
+              }
+              .dropdown-toggle {
+                background-color: transparent !important;
+                outline: none;
+                border: none;
+
+              }
+              .dropdown-menu {
+                .dropdown-item {
+
+                }
+              }
+            }
+          }
+        }
+   }
+  }
+
+
+
+
+  .section-3 {
+    .container {
+      h4 {
+
+        margin-top: 64px;
+      }
+      .chiziq {
+        width: 60px;
+        height: 2px;
+        background-color: red;
+      }
+      .row {
+        .col-lg-5 {
+          .card {
+            border: none;
+          }
+        }
+        .col-lg-7 {
+          .btn-danger {
+            background-color: red !important;
+          }
+          .card {
+            border: none;
+            background: none;
+            h5{
+              margin-top: 20px;
+            }
+            p {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 22px;
+
+              color: #000000;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .footer {
+    background-color: #1C1C1C;
+    color: white;
+    padding-bottom: 27px;
+    .container {
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+      h4 {
+       padding-top: 44px;
+        text-align: center;
+      }
+      .row {
+        .my-col6 {
+          a{
+            .img2 {
+              transform: translate(10px,-10px);
+            }
+          }
+        }
+        .my-col3 {
+
+            .box {
+              width: 40px;
+              height: 40px;
+              background-color: #272727;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: linear 0.5s;
+              &:hover {
+                background-color: white;
+              }
+            }
+
+        }
+
+        .my-col {
+          margin-top: 64px;
+          .btn-danger {
+            margin-bottom: 46px;
+            background-color: red !important;
+          }
+          form {
+            margin-bottom: 45px;
+            .form-row {
+              .col {
+
+                input {
+
+                  border-radius: 0;
+                  outline: none !important;
+
+                  background-color: transparent !important;
+                  border: none;
+                  border-bottom: 1px solid white;
+                  padding-bottom: 15px !important;
+                  &:focus{
+                    -webkit-box-shadow: none;
+                  }
+
+                }
+              }
+              .two {
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    hr {
+      background-color: white;
+    }
+  }
+
+
+}
